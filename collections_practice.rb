@@ -2,9 +2,9 @@ def begins_with_r(arr)
   return arr.all? { |word| word[0] == 'r'}
 end
 
-+def contain_a(arr)
-+  return arr.select{ |word| word.include?('a')}
-+end
+def contain_a(arr)
+  return arr.select{ |word| word.include?('a')}
+end
 +
 +def first_wa(arr)
 +  return arr.find{ |el| el.to_s.include?('wa')}
