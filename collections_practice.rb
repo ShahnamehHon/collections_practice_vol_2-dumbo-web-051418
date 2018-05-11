@@ -15,13 +15,11 @@ def remove_non_strings(arr)
 end
 
 def count_elements(arr)
-  arr.group_by(&:itself).collect { |key, value| key.merge({:count => value.length})
-   end
+  arr.group_by(&:itself).collect { |key, value| key.merge({:count => value.length})}
 end
 
 def merge_data(keys, data)
-  keys.collect { |names| names.merge(data[0][names[:first_name]])
- end
+  keys.collect { |names| names.merge(data[0][names[:first_name]])}
 end
 
 def find_cool(arr)
