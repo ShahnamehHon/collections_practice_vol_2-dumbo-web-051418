@@ -15,8 +15,7 @@ def remove_non_strings(arr)
 end
 
 def count_elements(arr)
-  arr.group_by(&:itself).collect do |key, value|
-     key.merge({:count => value.length})
+  arr.group_by(&:itself).collect { |key, value| key.merge({:count => value.length})
    end
 end
 
