@@ -11,7 +11,7 @@ def first_wa(arr)
 end
 
 def remove_non_strings(arr)
-  return arr.delete_if{ |e| !e.kind_of?(String)}
+  return arr.delete_if { |e| !e.kind_of?(String)}
 end
 
 def count_elements(arr)
