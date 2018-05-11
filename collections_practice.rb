@@ -29,12 +29,10 @@ end
 
 def organize_schools(schools)
   organized_school = Hash.new
-  schools.each do |key, val|
+  schools.each { |key, val|
     if organized_school[val[:location]] == nil
       organized_school[val[:location]] = [] << key
     else
-      organized_school[val[:location]] << key
-    end
-  end
+      organized_school[val[:location]] << key }
  organized_school
 end
