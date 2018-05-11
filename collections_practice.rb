@@ -34,5 +34,6 @@ def organize_schools(schools)
       organized_school[val[:location]] = [] << key
     else
       organized_school[val[:location]] << key }
+    end
  organized_school
 end
