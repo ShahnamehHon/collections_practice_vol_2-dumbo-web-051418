@@ -20,8 +20,7 @@ def count_elements(arr)
 end
 
 def merge_data(keys, data)
-  keys.collect do |names|
-    names.merge(data[0][names[:first_name]])
+  keys.collect { |names| names.merge(data[0][names[:first_name]])
  end
 end
 
