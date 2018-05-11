@@ -3,12 +3,12 @@ def begins_with_r(arr)
 end
 
 def contain_a(arr)
-  return arr.select{ |word| word.include?('a')}
+  return arr.select { |word| word.include?('a')}
 end
-+
-+def first_wa(arr)
-+  return arr.find{ |el| el.to_s.include?('wa')}
-+end
+
+def first_wa(arr)
+  return arr.find { |el| el.to_s.include?('wa')}
+end
 +
 +def remove_non_strings(arr)
 +  return arr.delete_if{ |e| !e.kind_of?(String)}
