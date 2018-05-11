@@ -32,7 +32,8 @@ def organize_schools(schools)
   schools.each { |key, val| if organized_school[val[:location]] == nil
       organized_school[val[:location]] = [] << key
     else
-      organized_school[val[:location]] << key }
+      organized_school[val[:location]] << key
+  }
     end
  organized_school
 end
