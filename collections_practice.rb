@@ -23,8 +23,8 @@ def merge_data(keys, data)
 end
 
 def find_cool(arr)
-  search = arr.collect { |hash| hash if hash.has_value?('cool') }
-  search.compact
+  cools = arr.collect { |hash| hash if hash.has_value?('cool') }
+  cools.compact
 end
 
 def organize_schools(schools)
