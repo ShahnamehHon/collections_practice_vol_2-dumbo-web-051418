@@ -9,38 +9,38 @@ end
 def first_wa(arr)
   return arr.find { |el| el.to_s.include?('wa')}
 end
-+
-+def remove_non_strings(arr)
-+  return arr.delete_if{ |e| !e.kind_of?(String)}
-+end
-+
-+def count_elements(arr)
-+  arr.group_by(&:itself).collect do |key, value|
-+     key.merge({:count => value.length})
-+   end
-+end
-+
-+def merge_data(keys, data)
-+  keys.collect do |names|
-+    names.merge(data[0][names[:first_name]])
-+  end
-+end
-+
-+def find_cool(arr)
-+  cools = arr.collect do |hash|
-+     hash if hash.has_value?('cool')
-+  end
-+  cools.compact
-+end
-+
-+def organize_schools(schools)
-+  organized_school = Hash.new
-+  schools.each do |key, val|
-+    if organized_school[val[:location]] == nil
-+      organized_school[val[:location]] = [] << key
-+    else
-+      organized_school[val[:location]] << key
-+    end
-+  end
-+ organized_school
-+end
+
+def remove_non_strings(arr)
+  return arr.delete_if{ |e| !e.kind_of?(String)}
+end
+
+def count_elements(arr)
+  arr.group_by(&:itself).collect do |key, value|
+     key.merge({:count => value.length})
+   end
+end
+
+def merge_data(keys, data)
+  keys.collect do |names|
+    names.merge(data[0][names[:first_name]])
+ end
+end
+
+def find_cool(arr)
+  cools = arr.collect do |hash|
+     hash if hash.has_value?('cool')
+  end
+  cools.compact
+end
+
+def organize_schools(schools)
+  organized_school = Hash.new
+  schools.each do |key, val|
+    if organized_school[val[:location]] == nil
+      organized_school[val[:location]] = [] << key
+    else
+      organized_school[val[:location]] << key
+    end
+  end
+ organized_school
+end
